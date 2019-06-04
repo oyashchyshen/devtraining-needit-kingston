@@ -13,12 +13,14 @@
         <on_load>true</on_load>
         <order>100</order>
         <reverse_if_false>true</reverse_if_false>
-        <run_scripts>false</run_scripts>
+        <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
-
+	//alert('UI policy was triggered like false');
+	g_form.hideFieldMsg('other', true);
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-
+	//alert('UI policy was triggered like true');
+	 g_form.showFieldMsg('other','Briefly explain what you need.','info');
 }]]></script_true>
         <set_values/>
         <short_description>needit show or hide Other field</short_description>
@@ -28,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c24e36f5dbf13300d25a9fd2ca9619e1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>needit show or hide Other field</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -36,9 +38,9 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ui_policy_c24e36f5dbf13300d25a9fd2ca9619e1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-03 14:59:23</sys_updated_on>
+        <sys_updated_on>2019-06-04 08:13:20</sys_updated_on>
         <table>x_58872_needit_needit</table>
-        <ui_type>0</ui_type>
+        <ui_type>10</ui_type>
         <view/>
     </sys_ui_policy>
 </record_update>
